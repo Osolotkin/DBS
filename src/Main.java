@@ -9,13 +9,6 @@ public class Main {
             Utils.writeError("Could not load config from file!");
         }
 
-        if (Config.ALIGNMENT == Database.Align.LEFT) {
-            System.out.println("LEFT");
-        } else if (Config.ALIGNMENT == Database.Align.RIGHT) {
-            System.out.println("RIGHT");
-        } else if (Config.ALIGNMENT == Database.Align.CENTER) {
-            System.out.println("CENTER");
-        }
         // connecting to the database
         if (database.connect() == 1) {
             Utils.writeError("Could not connect to the data base");
